@@ -4,13 +4,15 @@ from setuptools import setup, find_packages
 
 setup(
     name='bootstrap_salt',
-    version='1.0.0',
+    version='fix-packaging',
     url='http://github.com/ministryofjustice/bootstrap-salt/',
     license='LICENSE',
     author='MOJDS',
     author_email='tools@digital.justice.gov.uk',
     description='MOJDS salt bootstrap tool',
     long_description="",
+    #package_data={'bootstrap_salt': ['contrib/etc/salt/minion']},
+    include_package_data=True,
     packages=find_packages(exclude=["tests"]),
     zip_safe=False,
     platforms='any',
