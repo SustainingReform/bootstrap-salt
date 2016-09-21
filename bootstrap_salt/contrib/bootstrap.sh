@@ -1,5 +1,5 @@
 #!/bin/bash
-REVISION=$1
+REVISION=tmp
 wget https://raw.githubusercontent.com/saltstack/salt-bootstrap/6080a18e6c7c2d49335978fa69fa63645b45bc2a/bootstrap-salt.sh -O /tmp/bootstrap-salt.sh
 chmod 700 /tmp/bootstrap-salt.sh
 apt-get update && apt-get -y install python-pip git python-dev
